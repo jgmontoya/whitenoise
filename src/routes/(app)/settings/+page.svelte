@@ -37,6 +37,7 @@ import {
     Skull,
     Trash,
     UserPlus,
+    Lightning,
 } from "phosphor-svelte";
 import { onDestroy, onMount } from "svelte";
 
@@ -388,6 +389,13 @@ async function copyNsec(account: Account) {
                 <button onclick={() => goto("/settings/network/")} class="row-button">
                     <HardDrives size={24} class="shrink-0" />
                     <span>Network</span>
+                    <CaretRight size={24} class="ml-auto mr-0 shrink-0" />
+                </button>
+            </li>
+            <li class="section-list-item">
+                <button onclick={() => goto("/settings/lightning/")} class="row-button">
+                    <Lightning size={24} class="shrink-0" />
+                    <span>Lightning</span>
                     <CaretRight size={24} class="ml-auto mr-0 shrink-0" />
                 </button>
             </li>
